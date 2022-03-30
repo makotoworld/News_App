@@ -8,7 +8,7 @@ import 'package:news_app/Services/api_calls.dart';
 
 class Home extends StatefulWidget {
   String url;
-  Home({this.url = everthing_url});
+  Home({this.url = Hearing});
   @override
   _HomeState createState() => _HomeState();
 }
@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
         child: Scaffold(
           appBar: AppBar(
             title: const Text(
-              'News App',
+              'Japan Deaf News',
               softWrap: true,
             ),
             actions: [

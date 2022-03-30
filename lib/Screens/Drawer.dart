@@ -52,6 +52,62 @@ class _NewsDrawerState extends State<NewsDrawer> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Home(
+                        url: Signjp,
+                      ),
+                    ),
+                  );
+                },
+                trailing: const IconButton(
+                  onPressed: null,
+                  icon: Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.white,
+                  ),
+                ),
+                title: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    '手話',
+                    softWrap: true,
+                    textAlign: TextAlign.left,
+                    style: getDrawerTextStyle(context),
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Home(
+                        url: Hearing,
+                      ),
+                    ),
+                  );
+                },
+                trailing: const IconButton(
+                  onPressed: null,
+                  icon: Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.white,
+                  ),
+                ),
+                title: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    '聴覚障害',
+                    softWrap: true,
+                    textAlign: TextAlign.left,
+                    style: getDrawerTextStyle(context),
+                  ),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Home(
                         url: everthing_url,
                       ),
                     ),

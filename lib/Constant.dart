@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-const api_Key = 'YOUR_API_KEY';
+const api_Key = '208c4a76d0944eb5bc4975fded3feea0';
 const top_headlines =
     'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=$api_Key';
 const everthing_url =
@@ -18,6 +18,10 @@ const Apple =
     'https://newsapi.org/v2/everything?q=apple&apiKey=$api_Key&language=en';
 const Bitcoin =
     'https://newsapi.org/v2/everything?q=bitcoin&apiKey=$api_Key&language=en';
+const Signjp =
+    'https://newsapi.org/v2/everything?q=手話&apiKey=$api_Key&language=jp';
+const Hearing =
+    'https://newsapi.org/v2/everything?q=聴覚障害&apiKey=$api_Key&language=jp';
 
 TextStyle getDrawerTextStyle(context) {
   return Theme.of(context).textTheme.headline1!.copyWith(
